@@ -1,0 +1,7 @@
+{
+  "name": "skill-github-daily-ops",
+  "version": "1.0.0",
+  "description": "Daily GitHub repo health check + safe Dependabot auto-merge. Outputs markdown report.",
+  "author": "Zero2Ai-hub",
+  "license": "MIT"
+}
