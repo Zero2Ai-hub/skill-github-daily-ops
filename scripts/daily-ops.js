@@ -74,7 +74,7 @@ async function listRepos(token, org) {
   const all = [];
   let page = 1;
   while (true) {
-    const { body } = await ghRequest(token, `/orgs/${org}/repos?per_page=100&page=${page}`);
+    const { body } = await ghRequest(token, `/user/repos?per_page=100&page=${page}&affiliation=owner`);
     if (!Array.isArray(body) || body.length === 0) break;
     all.push(...body.map(r => r.name));
     page++;
